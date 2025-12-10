@@ -1,0 +1,8 @@
+{
+    "defaults":
+    {
+        "run-as": "package"
+    },
+    "username": "docker-pansou",
+    "groupname": "docker-pansou"
+}

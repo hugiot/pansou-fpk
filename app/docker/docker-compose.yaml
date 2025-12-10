@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  webapp:
+    image: examples/web
+    ports:
+      - "{host_port}:{container_port}"
+    volumes:
+      - "/var/apps/pansou/shares/pansou/data:/data"
