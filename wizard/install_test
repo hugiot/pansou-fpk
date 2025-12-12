@@ -1,0 +1,108 @@
+[
+    {
+        "stepTitle": "认证配置", 
+        "items": [
+            {
+                "type": "select",
+                "field": "auth_enabled",
+                "label": "是否启用认证功能",
+                "initValue": "false",
+                "options": [
+                    {
+                        "label": "启用",
+                        "value": "true"
+                    },
+                    {
+                        "label": "禁用",
+                        "value": "false"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "field": "auth_users",
+                "label": "用户账号配置",
+                "initValue": "admin:admin",
+                "rules": []
+            },
+            {
+                "type": "text",
+                "field": "auth_token_expiry",
+                "label": "Token有效期（小时）",
+                "initValue": "24",
+                "rules": []
+            },
+            {
+                "type": "text",
+                "field": "auth_jwt_secret",
+                "label": "JWT 签名密钥（为空时自动生成）",
+                "initValue": "",
+                "rules": []
+            }
+        ]
+    },
+    {
+        "stepTitle": "高级配置", 
+        "items": [
+            {
+                "type": "text",
+                "field": "proxy",
+                "label": "SOCKS5代理（示例：socks5://xxx.xxx.xxx.xxx:7897）",
+                "initValue": "",
+                "rules": []
+            },
+            {
+                "type": "select",
+                "field": "cache_enabled",
+                "label": "是否启用缓存",
+                "initValue": "true",
+                "options": [
+                    {
+                        "label": "启用",
+                        "value": "true"
+                    },
+                    {
+                        "label": "禁用",
+                        "value": "false"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "field": "cache_ttl",
+                "label": "缓存过期时间（分）",
+                "initValue": "60",
+                "rules": [
+                    {
+                        "pattern": "^[0-9]+$",
+                        "message": "必须为数值类型"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "field": "max_concurrency",
+                "label": "最大并发数",
+                "initValue": "200",
+                "rules": [
+                    {
+                        "pattern": "^[0-9]+$",
+                        "message": "必须为数值类型"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "field": "max_pages",
+                "label": "最大搜索页数",
+                "initValue": "30",
+                "rules": [
+                    {
+                        "pattern": "^[0-9]+$",
+                        "message": "必须为数值类型"
+                    }
+                ]
+            }
+        ]
+    }
+]
