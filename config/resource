@@ -1,14 +1,4 @@
 {
-    "docker-project":
-    {
-        "projects":
-        [
-            {
-                "name": "pansou",
-                "path": "docker"
-            }
-        ]
-    },
     "data-share":
     {
         "shares":
@@ -19,17 +9,7 @@
                 {
                     "rw":
                     [
-                        "docker-pansou"
-                    ]
-                }
-            },
-            {
-                "name": "pansou/data",
-                "permission":
-                {
-                    "rw":
-                    [
-                        "docker-pansou"
+                        "pansou"
                     ]
                 }
             }

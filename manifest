@@ -1,10 +1,12 @@
 appname               = pansou
-version               = 1.0.0
+version               = 2.0.0
 display_name          = PanSou
 desc                  = PanSou是一款高性能的网盘资源搜索API服务，支持TG频道和插件搜索。系统设计以性能和可扩展性为核心，支持多频道多插件并发搜索、结果智能排序和网盘类型分类。
 arch                  = x86_64
 source                = thirdparty
 maintainer            = fish2018
+maintainer_url        = https://github.com/fish2018/pansou
 distributor           = xiaocai
+distributor_url       = https://github.com/hugiot/pansou-fpk
 desktop_uidir         = ui
 desktop_applaunchname = pansou.Application

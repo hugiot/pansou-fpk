@@ -3,11 +3,11 @@
         "pansou.Application": {
             "title": "pansou",
             "icon": "images/icon_{0}.png",
-            "type": "url",
-            "protocol": "",
+            "type": "iframe",
+            "protocol": "http",
             "port": "50080",
             "url": "/",
-            "allUsers": false
+            "allUsers": true
         }
     }
 }
